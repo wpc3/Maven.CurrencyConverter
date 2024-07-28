@@ -15,7 +15,7 @@ public class CurrencyTypeTest {
      */
     private void test(CurrencyType expectedType, ConvertableCurrency currencyObject) {
         // when
-        CurrencyType actualType = CurrencyType.getTypeOfCurrency(currencyObject);
+        CurrencyType actualType = currencyObject.getCurrencyType();
 
         // then
         Assert.assertEquals(expectedType, actualType);
